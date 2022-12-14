@@ -1,0 +1,126 @@
+html {
+  box-sizing: border-box;
+}
+
+/* The Universal Selector */
+*, /* All elements*/
+*::before, /* All ::before pseudo-elements */
+*::after {
+  /* All ::after pseudo-elements */
+  /* height & width will now include border & padding by default
+     but can be over-ridden as needed */
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #165353;
+  /* Use a system font, if none are available use an available sans-sarif   font */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  /* border: 1px solid; */
+  height: 450px;
+  width: 250px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.online {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+  padding-right: 10px;
+  font-size: 13px;
+  color: gray;
+}
+
+.name_pic {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* border: 1px solid; */
+  padding: 0px 60px 5px 60px;
+}
+
+.name_pic img {
+  border-radius: 50%;
+  border: 3px solid #5abd7c;
+}
+
+.name_pic h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.jobDesc {
+  /* border: 1px solid; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f3f3;
+  padding: 20px 60px;
+}
+
+.jobDesc > p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.price {
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+.price h4,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.price p {
+  color: gray;
+}
+
+.contact {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.contact div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.call {
+  background-color: #66d287;
+}
+
+.text {
+  background-color: #5abd7c;
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    background-color: blue;
+  }
+}
